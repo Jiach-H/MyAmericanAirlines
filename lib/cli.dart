@@ -67,7 +67,7 @@ class Flight {
 //从服务器获取数据的主方法
 Future fetchPost({String date = '2020-01-01',String origin = '',String dst = '',String flightnum = ''}) async {
   //var date = '2020-01-01';
-  var url = 'https://aaflight.herokuapp.com/flights?date=$date';
+  var url = 'url=$date';
 
   if(origin != ''){
   	url = '$url&origin=$origin';
@@ -137,7 +137,7 @@ ToAirport({String origins = 'University of Arzina',String destinations = 'Tucson
 	//var destinations = 'Tucson International Airport';
 
 	//Google API 获取地点到机场时间
-	var api_key = 'AIzaSyAb3ZcVT0MBncm1ZekebYY1NWUtFyHoHlo';
+	var api_key = 'abcdefghijklmn';
 	var GoogleAPI = 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=$origins&destinations=$destinations&departure_time=now&key=$api_key';
 	
 	final response =
